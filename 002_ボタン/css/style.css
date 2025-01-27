@@ -1,0 +1,74 @@
+:root {
+    --color-base-text: #28322f;
+    --color-black: #131313;
+    --color-white: #f1f1f1;
+    --color-primary: #126445;
+    --color-primary-light: #a8c7bc;
+    --color-primary-dark: #075538;
+    --color-accordion: #d3e9e1;
+    --color-gray: #fafafa;
+    --color-placeholder: #a3a3a3;
+    --color-focus: #2196f3;
+}
+
+body {
+    line-height: 1.7;
+    font-size: 16px;
+    color: var(--color-base-text);
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 760px;
+    margin-inline: auto;
+    padding: 80px 0;
+}
+
+.spacer {
+    height: 40px;
+}
+/*!
+ここから
+------------------------------
+*/
+.button-white,
+.button-green {
+    font-weight: bold;
+    padding: 12px 40px;
+    border-radius: 100vh;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-white {
+    border: 3px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: var(--color-white);
+}
+
+@media (any-hover: hover) {
+    .button-white:hover {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+}
+
+.button-green {
+    border: 3px solid var(--color-primary);
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+@media (any-hover: hover) {
+    .button-green:hover {
+        background-color: var(--color-white);
+        color: var(--color-primary);
+    }
+}

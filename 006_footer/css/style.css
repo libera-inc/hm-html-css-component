@@ -1,0 +1,99 @@
+:root {
+    --color-base-text: #28322f;
+    --color-black: #131313;
+    --color-white: #f1f1f1;
+    --color-primary: #126445;
+    --color-primary-light: #a8c7bc;
+    --color-primary-dark: #075538;
+    --color-accordion: #d3e9e1;
+    --color-gray: #fafafa;
+    --color-placeholder: #a3a3a3;
+    --color-focus: #2196f3;
+}
+
+body {
+    line-height: 1.7;
+    font-size: 16px;
+    color: var(--color-base-text);
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+.container {
+    padding: 80px 0;
+}
+
+/*!
+ここから
+------------------------------
+*/
+.footer {
+    padding: 40px 0 24px;
+    background-color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 24px 0;
+    }
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 90%;
+    margin-inline: auto;
+    max-width: 760px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-inner {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+}
+
+.footer-item:not(:last-child)::after {
+    content: "/";
+    display: inline-block;
+    margin: 0 12px;
+    color: var(--color-white);
+}
+
+.footer-link {
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-copyright {
+    font-weight: bold;
+    color: var(--color-white);
+    text-align: center;
+    display: block;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .footer-copyright {
+        font-size: 16px;
+    }
+}
