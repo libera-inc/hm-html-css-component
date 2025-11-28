@@ -46,9 +46,6 @@ body {
     border: 1px solid var(--color-primary-light);
     background-color: var(--color-gray);
     padding: 12px 16px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     outline: none;
 }
 

@@ -58,20 +58,11 @@ body {
     display: flex;
     gap: 4px;
     overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    padding: 0 8px;
 }
 
 .header-list::-webkit-scrollbar {
     display: none;
-}
-
-.header-list::before,
-.header-list::after {
-    content: "";
-    display: block;
-    width: 4px;
-    flex-shrink: 0;
 }
 
 .header-item {
